@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <link rel="stylesheet" href="styles/powerBi.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Mon Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projet.html" class="active">Projets</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="other.html">Autre</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+      <section id="projet">
+        <div class="container">
+          <!-- Première visualisation -->
+          <div class="visualisation">
+            <h2>Projet Blinkit</h2>
+            <p class="description">
+              Analyse des données du projet Blinkit, avec des indicateurs clés.
+            </p>
+            <iframe
+              title="Projet Blinkit"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZDRkYzY2MzQtM2IwZi00YjA4LWJkODUtODM1ZmFkOWI3YzEyIiwidCI6IjE1ODcxNmNmLTQ2YjktNDhjYS04YzQ5LWM3YmI2N2U1NzVmMyIsImMiOjh9"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+
+          <!-- Deuxième visualisation -->
+          <div class="visualisation">
+            <h2>Visualisation Générale</h2>
+            <p class="description">
+              Vue d'ensemble avec des graphiques dynamiques sur divers
+              indicateurs.
+            </p>
+            <iframe
+              title="Visualisation Power BI"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZDQxNWZlYzAtMWU4ZC00OWU0LWIxNjQtODMzZDk2ZGI1YWRjIiwidCI6IjE1ODcxNmNmLTQ2YjktNDhjYS04YzQ5LWM3YmI2N2U1NzVmMyIsImMiOjh9"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+
+          <!-- Deuxième visualisation -->
+          <div class="visualisation">
+            <h2>Locataire par résidence</h2>
+            <p class="description">
+              Vue d'ensemble avec des graphiques dynamiques sur divers
+              indicateurs.
+            </p>
+            <iframe
+              title="projet_location"
+              width="600"
+              height="373.5"
+              src="https://app.powerbi.com/view?r=eyJrIjoiZDE3NTI1OTMtYjdhOC00NTY3LWI3YmQtMmM1NDg0ODAwZTBkIiwidCI6IjE1ODcxNmNmLTQ2YjktNDhjYS04YzQ5LWM3YmI2N2U1NzVmMyIsImMiOjh9"
+              frameborder="0"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/projet.js"></script>
+  </body>
+</html>

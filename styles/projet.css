@@ -1,0 +1,149 @@
+/* Style global */
+/*background: linear-gradient(45deg, #3b3562, #6cceef, #b984eb, #ef9282);*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333; /* Couleur neutre et professionnelle */
+  line-height: 1.6; /* Espacement entre les lignes pour la lisibilité */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #9688f2, #91def8, #c591f6, #f8ada0);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+  height: auto; /* Permet au contenu de définir la hauteur */
+  overflow: auto; /* Active le défilement */
+}
+
+/* Animation de fond */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Style des titres */
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  color: #222; /* Couleur légèrement plus foncée */
+  font-weight: 700; /* Gras pour les titres */
+  margin-bottom: 1rem; /* Espacement en dessous */
+}
+
+h1 {
+  font-size: 2.5rem; /* Taille plus grande pour le titre principal */
+}
+
+h2 {
+  font-size: 2rem; /* Taille secondaire */
+}
+
+h3 {
+  font-size: 1.5rem; /* Taille tertiaire */
+}
+
+header {
+  background: #e9f1f9;
+  color: rgb(9, 65, 108);
+  /* Espace autour du header */
+  display: flex; /* Utilisation de Flexbox */
+  justify-content: space-between; /* Sépare les éléments */
+  align-items: center; /* Aligne verticalement */
+
+  position: fixed; /* Barre reste en haut */
+  top: 0; /* Fixé au sommet */
+  width: 100%; /* Prend toute la largeur */
+  z-index: 100; /* Assure qu'elle est au-dessus des autres éléments */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex; /* Affiche les items en ligne */
+  gap: 15px; /* Espace entre les items */
+  margin: 0;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  color: rgb(9, 65, 108);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Style pour l'élément actif */
+header nav ul li a.active {
+  color: #f047b7; /* Couleur pour l'élément actif */
+  text-decoration: underline; /* Souligne l'élément actif */
+  font-weight: bold; /* Gras pour mettre en évidence */
+}
+
+header nav ul li a:hover {
+  color: #f047b7; /* Couleur au survol */
+}
+
+/* Section Projets */
+#projet {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 200px;
+  width: 1000px;
+  height: 400px;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(135deg, #6c63ff, #f047b7);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 150px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajouter de l'espacement aux sections */
+section {
+  padding: 3rem 1.5rem; /* Espacement intérieur (haut/bas: 3rem, gauche/droite: 1.5rem) */
+}
+
+/* Alignement centré pour les titres */
+section h1,
+section h2 {
+  text-align: center;
+}

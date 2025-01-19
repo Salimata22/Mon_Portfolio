@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333; /* Couleur neutre et professionnelle */
+  line-height: 1.6; /* Espacement entre les lignes pour la lisibilité */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #9688f2, #91def8, #c591f6, #f8ada0);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+  height: auto; /* Permet au contenu de définir la hauteur */
+  overflow: auto; /* Active le défilement */
+}
+
+/* Animation de fond */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Style des titres */
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  color: #222; /* Couleur légèrement plus foncée */
+  font-weight: 700; /* Gras pour les titres */
+  margin-bottom: 1rem; /* Espacement en dessous */
+}
+
+h1 {
+  font-size: 2.5rem; /* Taille plus grande pour le titre principal */
+}
+
+h2 {
+  font-size: 2rem; /* Taille secondaire */
+}
+
+h3 {
+  font-size: 1.5rem; /* Taille tertiaire */
+}
+
+header {
+  background: #e9f1f9;
+  color: rgb(9, 65, 108);
+  /* Espace autour du header */
+  display: flex; /* Utilisation de Flexbox */
+  justify-content: space-between; /* Sépare les éléments */
+  align-items: center; /* Aligne verticalement */
+
+  position: fixed; /* Barre reste en haut */
+  top: 0; /* Fixé au sommet */
+  width: 100%; /* Prend toute la largeur */
+  z-index: 100; /* Assure qu'elle est au-dessus des autres éléments */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex; /* Affiche les items en ligne */
+  gap: 15px; /* Espace entre les items */
+  margin: 0;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  color: rgb(9, 65, 108);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Style pour l'élément actif */
+header nav ul li a.active {
+  color: #f047b7; /* Couleur pour l'élément actif */
+  text-decoration: underline; /* Souligne l'élément actif */
+  font-weight: bold; /* Gras pour mettre en évidence */
+}
+
+header nav ul li a:hover {
+  color: #f047b7; /* Couleur au survol */
+}
+
+/* Sections */
+.about-container {
+  max-width: 900px;
+  margin: 100px auto; /* Espace sous le header */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-container h2 {
+  margin-top: 0;
+  color: #e6076f;
+  font-weight: 700;
+}
+
+.about-container ul {
+  padding-left: 1rem;
+}
+
+/* Style des paragraphes descriptifs */
+.competence-category p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Style des listes de compétences */
+.competence-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Style des éléments de la liste de compétences */
+.competence-category ul li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Espacement entre les sections de compétences */
+.competence-category {
+  margin-bottom: 2rem;
+}
+
+/* Style pour le texte sous le nom de l'école */
+.about-container p {
+  margin-top: 0.5rem;
+  color: #555; /* Couleur discrète pour la description */
+}
+
+/* Ajouter de l'espacement aux sections */
+section {
+  padding: 3rem 1.5rem; /* Espacement intérieur (haut/bas: 3rem, gauche/droite: 1.5rem) */
+}
+
+/* Alignement centré pour les titres */
+section h1,
+section h2 {
+  text-align: center;
+}

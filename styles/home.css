@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333; /* Couleur neutre et professionnelle */
+  line-height: 1.6; /* Espacement entre les lignes pour la lisibilité */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #9688f2, #91def8, #c591f6, #f8ada0);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+  height: auto; /* Permet au contenu de définir la hauteur */
+  overflow: auto; /* Active le défilement */
+}
+
+/* Animation de fond */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Style des titres */
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  color: #222; /* Couleur légèrement plus foncée */
+  font-weight: 700; /* Gras pour les titres */
+  margin-bottom: 1rem; /* Espacement en dessous */
+}
+
+h1 {
+  font-size: 2.5rem; /* Taille plus grande pour le titre principal */
+}
+
+h2 {
+  font-size: 2rem; /* Taille secondaire */
+}
+
+h3 {
+  font-size: 1.5rem; /* Taille tertiaire */
+}
+
+/* Style des titres */
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  color: #222; /* Couleur légèrement plus foncée */
+  font-weight: 700; /* Gras pour les titres */
+  margin-bottom: 1rem; /* Espacement en dessous */
+}
+
+h1 {
+  font-size: 2.5rem; /* Taille plus grande pour le titre principal */
+}
+
+h2 {
+  font-size: 2rem; /* Taille secondaire */
+}
+
+h3 {
+  font-size: 1.5rem; /* Taille tertiaire */
+}
+
+header {
+  background: #e9f1f9;
+  color: rgb(9, 65, 108);
+  /* Espace autour du header */
+  display: flex; /* Utilisation de Flexbox */
+  justify-content: space-between; /* Sépare les éléments */
+  align-items: center; /* Aligne verticalement */
+
+  position: fixed; /* Barre reste en haut */
+  top: 0; /* Fixé au sommet */
+  width: 100%; /* Prend toute la largeur */
+  z-index: 100; /* Assure qu'elle est au-dessus des autres éléments */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex; /* Affiche les items en ligne */
+  gap: 15px; /* Espace entre les items */
+  margin: 0;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  color: rgb(9, 65, 108);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Style pour l'élément actif */
+header nav ul li a.active {
+  color: #f047b7; /* Couleur pour l'élément actif */
+  text-decoration: underline; /* Souligne l'élément actif */
+  font-weight: bold; /* Gras pour mettre en évidence */
+}
+
+header nav ul li a:hover {
+  color: #f047b7; /* Couleur au survol */
+}
+
+.card-container {
+  display: flex; /* Active Flexbox */
+  width: 100%; /* Prend toute la largeur du parent */
+}
+
+.left,
+.right {
+  width: 50%; /* Chaque div occupe 50% */
+  padding: 10px; /* Facultatif pour ajouter du padding */
+  box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+}
+
+#cardright {
+  display: flex; /* Conserve l'alignement horizontal si nécessaire */
+  flex-direction: column;
+  align-items: center;
+  height: auto; /* Plus besoin de 100vh */
+  text-align: center;
+  margin-top: 140px; /* Ajustez cette valeur pour remonter l'élément */
+}
+
+/* Style pour le nom */
+.name h2 {
+  font-family: "Playfair Display", serif; /* Police élégante */
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  opacity: 0; /* Masqué initialement */
+  transform: translateY(20px); /* Position pour animation */
+  transition: opacity 0.6s, transform 0.6s; /* Animation douce */
+}
+
+.name p {
+  opacity: 0; /* Masqué initialement */
+  transform: translateY(20px); /* Position pour animation */
+  transition: opacity 0.6s, transform 0.6s;
+  font-size: 1rem; /* Taille standard */
+  margin-bottom: 1rem; /* Espacement entre les paragraphes */
+  color: #555; /* Couleur légèrement plus douce */
+}
+
+/* Style général */
+.contact-icons a img {
+  width: 50px;
+  height: 50px;
+  opacity: 0; /* Masqué initialement */
+  transition: opacity 1s ease-in-out, transform 1s;
+  transform: scale(0.8); /* Réduction initiale pour effet zoom */
+}
+
+/* Icônes visibles */
+.contact-icons a img.show {
+  opacity: 1;
+  transform: scale(1); /* Effet zoom-in */
+}
+
+/* Style général */
+/* Style du texte */
+.name h2,
+.name p {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  opacity: 0; /* Masqué initialement */
+  transform: translateY(20px); /* Position pour animation */
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Icônes */
+.contact-icons a img {
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+/* Ajout des polices */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
+
+/* Texte affiché au milieu de la page */
+#popup-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*background-color: #f047b7;*/
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les bordures */
+@keyframes borderAnimation {
+  0% {
+    border-color: #fe7dd3;
+    box-shadow: 0 0 15px #fe7dd3;
+  }
+  20% {
+    border-color: #f7a1da;
+    box-shadow: 0 0 15px #f7a1da;
+  }
+  40% {
+    border-color: #fe7dd3;
+    box-shadow: 0 0 15px #fe7dd3;
+  }
+  60% {
+    border-color: #f7a1da;
+    box-shadow: 0 0 15px #f7a1da;
+  }
+  80% {
+    border-color: #fe7dd3;
+    box-shadow: 0 0 15px #fe7dd3;
+  }
+  100% {
+    border-color: #f7a1da;
+    box-shadow: 0 0 15px #f7a1da;
+  }
+}
+
+/* Animation de fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.5); /* Optionnel : petit effet de zoom */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #f7a1da;
+  cursor: pointer;
+
+  /* Bordure animée */
+  border: 6px solid #f7a1da; /* Couleur de bordure par défaut */
+  animation: fadeIn 1s forwards, borderAnimation 3s infinite; /* Combine fadeIn et animation de bordure */
+}
+
+.card img {
+  width: 100%;
+  height: 100%; /* L'image remplit complètement le cercle */
+  object-fit: cover; /* Ajuste l'image pour qu'elle s'adapte au cercle sans déformation */
+  border-radius: 50%; /* Assure que l'image suit également la forme circulaire */
+}
+
+.card p {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: whitesmoke;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optionnel : ajoute un fond semi-transparent */
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+/* Style du texte affiché au milieu */
+#popup-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #91def8; /* Couleur du fond */
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: none; /* Caché par défaut */
+  font-size: 1rem;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Ajouter des délais pour l'animation d'affichage */
+#card1 {
+  animation-delay: 0s; /* Première carte apparait tout de suite */
+}
+#card2 {
+  animation-delay: 0.5s; /* Deuxième carte après 0.5s */
+}
+#card3 {
+  animation-delay: 1s; /* Troisième carte après 1s */
+}
+#card4 {
+  animation-delay: 1.5s; /* Quatrième carte après 1.5s */
+}
+#card5 {
+  animation-delay: 2s; /* Cinquième carte après 2s */
+}
+#card6 {
+  animation-delay: 2.5s; /* Sixième carte après 2.5s */
+}
+
+/* Effet de survol */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Conteneur principal */
+.contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+/* Styles des icônes */
+.contact-icons a img {
+  width: 40px;
+  cursor: pointer;
+}
+
+/* Box d'informations (caché par défaut) */
+.contact-box {
+  display: none;
+  position: absolute;
+  background-color: #f7a1da;
+  border: 1px solid #f7a1da;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  z-index: 10;
+}
+
+/* Position pour le box de chaque icône */
+#phone-box {
+  top: 50px;
+  left: 0;
+}
+
+#email-box {
+  top: 50px;
+  left: 60px;
+}

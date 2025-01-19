@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "nALA6IP_tjSXsO1eK",
+        });
+      })();
+    </script>
+    <!-- Header -->
+    <header>
+      <h1>Mon Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projet.html">Projets</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="other.html">Autre</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Formulaire de contact -->
+    <!-- Formulaire de contact -->
+    <main>
+      <section id="contact">
+        <h2>Envoyez-moi un message</h2>
+        <form id="contact-form">
+          <label for="first-name">Prénom</label>
+          <input type="text" id="first-name" name="first-name" required />
+
+          <label for="last-name">Nom</label>
+          <input type="text" id="last-name" name="last-name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="function">Fonction</label>
+          <input type="text" id="function" name="function" required />
+
+          <label for="company">Entreprise</label>
+          <input type="text" id="company" name="company" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+        <div id="response-message"></div>
+      </section>
+    </main>
+
+    <script src="scripts/contact.js"></script>
+  </body>
+</html>

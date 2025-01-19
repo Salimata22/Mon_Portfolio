@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Accueil</title>
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue sur mon Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html" class="active">Accueil</a></li>
+          <li><a href="about.html">À Propos</a></li>
+          <li><a href="projet.html">Projets</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="other.html">Autres</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="card-container">
+      <div class="right" id="cardright">
+        <!-- Carte 1 -->
+        <div class="name" id="name">
+          <h2>Je suis salimata TOGO</h2>
+          <p>Etudiante en MASTER 1 MIAGE</p>
+        </div>
+
+        <div class="contact-icons">
+          <!-- Téléphone -->
+          <a href="#" class="icon-phone">
+            <img src="images/phone.png" alt="Téléphone" />
+          </a>
+          <div id="phone-box" class="contact-box">+33 7 68 37 21 65</div>
+
+          <!-- Email -->
+          <a href="#" class="icon-email">
+            <img src="images/email.png" alt="Email" />
+          </a>
+          <div id="email-box" class="contact-box">togo27317@gmail.com</div>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/salimatatogo/" target="_blank">
+            <img src="images/link.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+
+      <div class="left" id="cardleft">
+        <!-- Carte 3 -->
+        <div class="card" id="card3">
+          <img src="images/image1.jpeg" alt="Image 3" />
+          <p>optimiste</p>
+        </div>
+
+        <!-- Carte 4 -->
+        <div class="card" id="card4">
+          <img src="images/image2.jpeg" alt="Image 4" />
+          <p>courageuse</p>
+        </div>
+
+        <!-- Carte 6 -->
+        <div class="card" id="card6">
+          <img src="images/image3.jpeg" alt="Image 6" />
+          <p>Perseverante</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zone où le texte s'affichera -->
+    <div id="popup-text"></div>
+
+    <script src="scripts/home.js"></script>
+  </body>
+</html>

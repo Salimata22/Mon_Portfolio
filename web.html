@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <link rel="stylesheet" href="styles/web.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Mon Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projet.html" class="active">Projets</a></li>
+          <li><a href="skills.html">Compétences</a></li>
+          <li><a href="other.html">Autre</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section principale -->
+    <main>
+      <section id="projet">
+        <div class="container">
+          <!-- Première visualisation -->
+          <div class="visualisation">
+            <h2>
+              Visualisation en temps réel des données biométriques des patients
+            </h2>
+            <p class="description">
+              Le projet du nom de WEBS vise à développer une application web
+              pour la visualisation en temps réel des données biométriques
+              recueillies par des capteurs portés par les patients.
+              L'application permet aux professionnels de la santé de
+              sélectionner des patients, des activités spécifiques, et de
+              définir un taux de rafraîchissement pour visualiser les données
+              sous forme de graphiques. Le projet se divise en deux grandes
+              étapes : la conception de la composante client et celle du
+              serveur. La partie client est développée en HTML/CSS, JavaScript
+              et AJAX, avec la visualisation des données via des graphiques
+              interactifs en temps réel. Le serveur utilise Flask pour gérer les
+              requêtes et les processus de lecture des données, simulées par des
+              fichiers CSV et traités par un logiciel émulateur en C++. Les
+              fonctionnalités incluent la sélection des patients et des
+              activités, le taux de rafraîchissement des données, l'arrêt et le
+              démarrage de la visualisation, ainsi que l'affichage des données
+              brutes. Ce projet permet de démontrer la mise en œuvre d'une
+              interface utilisateur intuitive et réactive, intégrant des appels
+              AJAX pour une interaction fluide et une gestion efficace des
+              données biométriques.
+            </p>
+            <p class="tech">
+              Technologies utilisées :<br />
+              Clients : HTML/CSS, JavaScript, AJAX, Chart.js <br />Serveur :
+              Flask, C++, CSV
+            </p>
+            <p>
+              Le projet s'inscrit dans le cadre du Master 1 MIAGE, sous la
+              direction de Henry Ferreira Chame.
+            </p>
+
+            <video width="640" height="360" controls>
+              <source src="images/VideoSystemeProjet.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+          </div>
+
+          <!-- Deuxième visualisation -->
+          <div class="visualisation"></div>
+
+          <!-- Deuxième visualisation -->
+          <div class="visualisation"></div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/projet.js"></script>
+  </body>
+</html>
