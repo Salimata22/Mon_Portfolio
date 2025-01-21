@@ -320,28 +320,17 @@ header nav ul li a:hover {
 }
 
 /* Ajouter des délais pour l'animation d'affichage */
-#card1 {
-  animation-delay: 0s; /* Première carte apparait tout de suite */
-}
-#card2 {
-  animation-delay: 0.5s; /* Deuxième carte après 0.5s */
-}
-#card3 {
-  animation-delay: 1s; /* Troisième carte après 1s */
-}
-#card4 {
-  animation-delay: 1.5s; /* Quatrième carte après 1.5s */
-}
-#card5 {
-  animation-delay: 2s; /* Cinquième carte après 2s */
-}
+
 #card6 {
-  animation-delay: 2.5s; /* Sixième carte après 2.5s */
+  animation-delay: 0.5s;
+  width: 300px; /* Augmentez la largeur */
+  height: 300px; /* Augmentez la hauteur */
+  /* Sixième carte après 2.5s */
 }
 
 /* Effet de survol */
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* Conteneur principal */

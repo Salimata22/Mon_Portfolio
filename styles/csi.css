@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #9688f2, #91def8, #c591f6, #f8ada0);
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+  height: auto;
+  overflow: auto;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  background: #e9f1f9;
+  color: rgb(9, 65, 108);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  color: rgb(9, 65, 108);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a.active {
+  color: #f047b7;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #f047b7;
+}
+
+main {
+  margin-top: 80px; /* Pour éviter que le header couvre le contenu */
+}
+
+section {
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+p.tech,
+p.context,
+p.links {
+  text-align: center;
+}
+
+p.links a {
+  color: #f047b7;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+p.links a:hover {
+  color: #333;
+}
+
+/* Styles des images */
+.images {
+  display: flex; /* Affiche les images en ligne */
+  flex-wrap: wrap; /* Passe à la ligne si les images débordent */
+  gap: 20px; /* Espace entre les images */
+  justify-content: center; /* Centre les images */
+  margin-top: 2rem;
+}
+
+.images figure {
+  max-width: 300px; /* Limite la largeur des images */
+  text-align: center; /* Centre les légendes */
+  margin: 0; /* Supprime les marges par défaut */
+}
+
+.images img {
+  width: 100%; /* Adapte la taille de l'image au conteneur */
+  height: auto; /* Conserve les proportions */
+  border-radius: 8px; /* Arrondit légèrement les coins */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre douce */
+}
+
+.images figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* Styles pour la section Points forts */
+.highlights {
+  margin-top: 2rem;
+}
+
+.highlights h3 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.highlights ul {
+  list-style: disc; /* Puces en forme de disques */
+  margin: 0 auto;
+  padding: 0 1.5rem; /* Espacement à gauche et à droite */
+  max-width: 800px; /* Limite la largeur de la liste */
+}
+
+.highlights ul li {
+  margin-bottom: 0.8rem; /* Espacement entre les éléments */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}

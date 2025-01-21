@@ -106,11 +106,12 @@ section h2 {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
   border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .visualisation {
@@ -132,4 +133,28 @@ section h2 {
   font-size: 1rem;
   color: #333;
   text-align: center;
+}
+
+/* Conteneur des images */
+.images {
+  display: flex; /* Affichage en ligne des images */
+  flex-wrap: wrap; /* Permet de passer à la ligne si les images dépassent */
+  gap: 20px; /* Espacement entre les images */
+  justify-content: center; /* Centre les images horizontalement */
+  margin: 2rem 0; /* Espacement autour du conteneur */
+}
+
+/* Style pour chaque figure */
+.images figure {
+  max-width: 300px; /* Largeur maximale pour chaque image */
+  text-align: center; /* Centre le texte de la légende */
+  margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Les images elles-mêmes */
+.images img {
+  width: 100%; /* Adapte l'image à la largeur du conteneur */
+  height: auto; /* Conserve les proportions de l'image */
+  border-radius: 8px; /* Coins légèrement arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour l'esthétique */
 }
