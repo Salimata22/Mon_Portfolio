@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>À propos</title>
-    <link rel="stylesheet" href="styles/postgresql.css" />
+    <title>PostgreSQL</title>
+    <link rel="stylesheet" href="styles/web.css" />
   </head>
   <body>
     <!-- Header -->
@@ -14,7 +14,7 @@
         <ul>
           <li><a href="home.html">Accueil</a></li>
           <li><a href="about.html">À propos</a></li>
-          <li><a href="projet.html" class="active">Projets</a></li>
+          <li><a href="projet.html">Projets</a></li>
           <li><a href="skills.html">Compétences</a></li>
           <li><a href="other.html">Autre</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -24,7 +24,63 @@
 
     <!-- Section principale -->
     <main>
-      <section id="projet"></section>
+      <section id="postgresql">
+        <div class="container">
+          <!-- Description du projet -->
+          <div class="visualisation">
+            <h2>Gestion des données avec PostgreSQL</h2>
+            <p class="description">
+              Ce projet met en œuvre un système de gestion de base de données
+              relationnelle avec PostgreSQL. L'objectif est de concevoir une
+              base de données performante pour une application web, incluant la
+              création et l'optimisation des tables, la gestion des relations
+              entre les entités et l'exécution de requêtes complexes pour
+              extraire et analyser des données.
+            </p>
+            <p class="tech">
+              Technologies utilisées :<br />
+              SGBD : PostgreSQL<br />
+              Interface utilisateur : HTML/CSS, JavaScript<br />
+              Back-end : Flask
+            </p>
+            <p>
+              Ce projet a été réalisé dans le cadre d'une mission académique.
+            </p>
+
+            <!-- Lien vers GitHub -->
+            <p>
+              Accédez au code source sur
+              <a
+                href="https://github.com/Salimata22/Conception_systeme_information.git"
+                target="_blank"
+                >GitHub</a
+              >.
+            </p>
+
+            <!-- Images associées -->
+            <div class="images">
+              <figure>
+                <img
+                  src="images/sqltable.png"
+                  alt="Schéma de la base de données"
+                />
+                <figcaption>Schéma de la base de données</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="images/proceduresql.png"
+                  alt="Exemple de requêtes SQL"
+                />
+                <figcaption>Les procedures</figcaption>
+              </figure>
+              <figure>
+                <img src="images/triggersql.png" alt="Dashboard d'analyse" />
+                <figcaption>Les tiggers et énumérations</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="scripts/projet.js"></script>
   </body>
